@@ -1,0 +1,26 @@
+<div class="container">
+
+    <div class="card mt-5">
+        <h2 class="title m-auto p-2 mt-5">Agregar una nueva cuenta :D</h2>
+        <div class="card-body justify-content-md-center p-5">
+          
+            <div class="col">
+
+                <div class="row">
+                        <label for="monto">Monto Inicial: </label>
+                         <input  id="monto" type="text" class=" col form-control " placeholder="Exp: 23452365..."
+                         name="monto"
+                        [(ngModel)]="monto">
+                    
+                       <button class="btn btn-primary col-4 m-1" (click)="add()">Añadir</button>
+                </div>
+            </div>
+            <p><strong>{{this.msg}}</strong></p>
+           
+
+        </div>
+
+    </div>
+
+</div>
+

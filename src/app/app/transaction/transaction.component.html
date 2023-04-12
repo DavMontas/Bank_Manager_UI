@@ -1,0 +1,39 @@
+<div class="container">
+
+    <div class="card mt-5">
+        <h2 class="title m-auto p-2 mt-5">Realizar una transaccion</h2>
+        <div class="card-body justify-content-md-center p-5">
+          
+            <div class="col">
+
+                <div class="row">
+                        <label for="accountFrom">Cuenta origen: </label>
+                         <input  id="accountFrom" type="text" class=" col form-control " placeholder="Exp: 23452365..."
+                         name="numeroCuentaFrom"
+                        [(ngModel)]="numeroCuentaFrom">
+                        
+
+                        <label for="accounTo">Cuenta Destino: </label>
+                         <input  id="accountTo" type="text" class=" col form-control " placeholder="Exp: 23452365..."
+                         name="numeroCuentaTo"
+                        [(ngModel)]="numeroCuentaTo">
+                        
+
+                        <label for="accounTo">Monto: </label>
+                        <input  id="accountTo" type="text" class=" col form-control "
+                        name="monto"
+                        [(ngModel)]="monto">
+                      
+                       <button class="btn btn-primary col-4 m-1" (click)="transaccion()">Buscar</button>
+                </div>
+                <p><strong>{{msg}}</strong></p>
+                
+            </div>
+           
+
+        </div>
+
+    </div>
+
+</div>
+
